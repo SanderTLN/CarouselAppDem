@@ -158,10 +158,84 @@ namespace CarouselAppDem
                     }
                 }
             };
+            var warcraftPage = new ContentPage
+            {
+                Content = new StackLayout
+                {
+                    BackgroundColor = Color.Wheat,
+                    Children =
+                    {
+                        new Label
+                        {
+                            Text = "Warcraft 3",
+                            FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Label)),
+                            TextColor = Color.Green,
+                            HorizontalOptions = LayoutOptions.Center
+                        },
+                        new Image
+                        {
+                            WidthRequest = 300,
+                            HeightRequest = 300,
+                            Source = "warcraft.png",
+                            HorizontalOptions = LayoutOptions.Center,
+                            VerticalOptions = LayoutOptions.CenterAndExpand
+                        },
+                        new Button
+                        {
+                            Text = "Тест",
+                            FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Button)),
+                            BackgroundColor = Color.Gray,
+                            TextColor = Color.Orange,
+                            WidthRequest = 160,
+                            HeightRequest = 60,
+                            HorizontalOptions = LayoutOptions.Center,
+                            VerticalOptions = LayoutOptions.EndAndExpand
+                        }
+                    }
+                }
+            };
+            var halflifePage = new ContentPage
+            {
+                Content = new StackLayout
+                {
+                    BackgroundColor = Color.Wheat,
+                    Children =
+                    {
+                        new Label
+                        {
+                            Text = "Half-Life 2",
+                            FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Label)),
+                            TextColor = Color.Green,
+                            HorizontalOptions = LayoutOptions.Center
+                        },
+                        new Image
+                        {
+                            WidthRequest = 300,
+                            HeightRequest = 300,
+                            Source = "halflife.png",
+                            HorizontalOptions = LayoutOptions.Center,
+                            VerticalOptions = LayoutOptions.CenterAndExpand
+                        },
+                        new Button
+                        {
+                            Text = "Тест",
+                            FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Button)),
+                            BackgroundColor = Color.Gray,
+                            TextColor = Color.Orange,
+                            WidthRequest = 160,
+                            HeightRequest = 60,
+                            HorizontalOptions = LayoutOptions.Center,
+                            VerticalOptions = LayoutOptions.EndAndExpand
+                        }
+                    }
+                }
+            };
             Children.Add(minecraftPage);
             Children.Add(gtavPage);
             Children.Add(farcryPage);
             Children.Add(falloutPage);
+            Children.Add(warcraftPage);
+            Children.Add(halflifePage);
         }
     }
 }
