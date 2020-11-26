@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,8 +12,69 @@ namespace CarouselAppDem
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainPage : CarouselPage
     {
+        Button btn1, btn2, btn3, btn4, btn5, btn6;
         public MainPage()
         {
+            btn1 = new Button();
+            btn1.Text = "Тест по игре";
+            btn1.FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Button));
+            btn1.BackgroundColor = Color.Gray;
+            btn1.TextColor = Color.Orange;
+            btn1.WidthRequest = 160;
+            btn1.HeightRequest = 60;
+            btn1.Margin = 5;
+            btn1.Clicked += Btn1_Clicked;
+
+            btn2 = new Button();
+            btn2.Text = "Тест по игре";
+            btn2.FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Button));
+            btn2.BackgroundColor = Color.Gray;
+            btn2.TextColor = Color.Orange;
+            btn2.WidthRequest = 160;
+            btn2.HeightRequest = 60;
+            btn2.Margin = 5;
+            btn2.Clicked += Btn2_Clicked;
+
+            btn3 = new Button();
+            btn3.Text = "Тест по игре";
+            btn3.FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Button));
+            btn3.BackgroundColor = Color.Gray;
+            btn3.TextColor = Color.Orange;
+            btn3.WidthRequest = 160;
+            btn3.HeightRequest = 60;
+            btn3.Margin = 5;
+            btn3.Clicked += Btn3_Clicked;
+
+            btn4 = new Button();
+            btn4.Text = "Тест по игре";
+            btn4.FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Button));
+            btn4.BackgroundColor = Color.Gray;
+            btn4.TextColor = Color.Orange;
+            btn4.WidthRequest = 160;
+            btn4.HeightRequest = 60;
+            btn4.Margin = 5;
+            btn4.Clicked += Btn4_Clicked;
+
+            btn5 = new Button();
+            btn5.Text = "Тест по игре";
+            btn5.FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Button));
+            btn5.BackgroundColor = Color.Gray;
+            btn5.TextColor = Color.Orange;
+            btn5.WidthRequest = 160;
+            btn5.HeightRequest = 60;
+            btn5.Margin = 5;
+            btn5.Clicked += Btn5_Clicked;
+
+            btn6 = new Button();
+            btn6.Text = "Тест по игре";
+            btn6.FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Button));
+            btn6.BackgroundColor = Color.Gray;
+            btn6.TextColor = Color.Orange;
+            btn6.WidthRequest = 160;
+            btn6.HeightRequest = 60;
+            btn6.Margin = 5;
+            btn6.Clicked += Btn6_Clicked;
+
             var minecraftPage = new ContentPage
             {
                 Content = new StackLayout
@@ -47,17 +108,7 @@ namespace CarouselAppDem
                             HorizontalTextAlignment = TextAlignment.Center,
                             HorizontalOptions = LayoutOptions.Center
                         },
-                        new Button
-                        {
-                            Text = "Тест",
-                            FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Button)),
-                            BackgroundColor = Color.Gray,
-                            TextColor = Color.Orange,
-                            WidthRequest = 160,
-                            HeightRequest = 60,
-                            HorizontalOptions = LayoutOptions.Center,
-                            VerticalOptions = LayoutOptions.EndAndExpand
-                        }
+                        btn1
                     }
                 }
             };
@@ -95,17 +146,7 @@ namespace CarouselAppDem
                             HorizontalTextAlignment = TextAlignment.Center,
                             HorizontalOptions = LayoutOptions.Center
                         },
-                        new Button
-                        {
-                            Text = "Тест",
-                            FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Button)),
-                            BackgroundColor = Color.Gray,
-                            TextColor = Color.Orange,
-                            WidthRequest = 160,
-                            HeightRequest = 60,
-                            HorizontalOptions = LayoutOptions.Center,
-                            VerticalOptions = LayoutOptions.EndAndExpand
-                        }
+                        btn2
                     }
                 }
             };
@@ -143,17 +184,7 @@ namespace CarouselAppDem
                             HorizontalTextAlignment = TextAlignment.Center,
                             HorizontalOptions = LayoutOptions.Center
                         },
-                        new Button
-                        {
-                            Text = "Тест",
-                            FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Button)),
-                            BackgroundColor = Color.Gray,
-                            TextColor = Color.Orange,
-                            WidthRequest = 160,
-                            HeightRequest = 60,
-                            HorizontalOptions = LayoutOptions.Center,
-                            VerticalOptions = LayoutOptions.EndAndExpand
-                        }
+                        btn3
                     }
                 }
             };
@@ -191,17 +222,7 @@ namespace CarouselAppDem
                             HorizontalTextAlignment = TextAlignment.Center,
                             HorizontalOptions = LayoutOptions.Center
                         },
-                        new Button
-                        {
-                            Text = "Тест",
-                            FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Button)),
-                            BackgroundColor = Color.Gray,
-                            TextColor = Color.Orange,
-                            WidthRequest = 160,
-                            HeightRequest = 60,
-                            HorizontalOptions = LayoutOptions.Center,
-                            VerticalOptions = LayoutOptions.EndAndExpand
-                        }
+                        btn4
                     }
                 }
             };
@@ -239,17 +260,7 @@ namespace CarouselAppDem
                             HorizontalTextAlignment = TextAlignment.Center,
                             HorizontalOptions = LayoutOptions.Center
                         },
-                        new Button
-                        {
-                            Text = "Тест",
-                            FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Button)),
-                            BackgroundColor = Color.Gray,
-                            TextColor = Color.Orange,
-                            WidthRequest = 160,
-                            HeightRequest = 60,
-                            HorizontalOptions = LayoutOptions.Center,
-                            VerticalOptions = LayoutOptions.EndAndExpand
-                        }
+                        btn5
                     }
                 }
             };
@@ -286,17 +297,7 @@ namespace CarouselAppDem
                             HorizontalTextAlignment = TextAlignment.Center,
                             HorizontalOptions = LayoutOptions.Center
                         },
-                        new Button
-                        {
-                            Text = "Тест",
-                            FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Button)),
-                            BackgroundColor = Color.Gray,
-                            TextColor = Color.Orange,
-                            WidthRequest = 160,
-                            HeightRequest = 60,
-                            HorizontalOptions = LayoutOptions.Center,
-                            VerticalOptions = LayoutOptions.EndAndExpand
-                        }
+                        btn6
                     }
                 }
             };
@@ -306,6 +307,42 @@ namespace CarouselAppDem
             Children.Add(falloutPage);
             Children.Add(warcraftPage);
             Children.Add(halflifePage);
+        }
+
+        private void Btn6_Clicked(object sender, EventArgs e)
+        {
+            Uri halflife = new Uri("https://vgtimes.ru/tests/36-test-naskolko-horosho-ty-znaesh-mir-half-life.html");
+            Browser.OpenAsync(halflife);
+        }
+
+        private void Btn5_Clicked(object sender, EventArgs e)
+        {
+            Uri warcraft = new Uri("https://www.cybersport.ru/warcraft-iii/articles/naskolko-khorosho-vy-pomnite-originalnuyu-warcraft-iii-test-ot-cybersport-ru");
+            Browser.OpenAsync(warcraft);
+        }
+
+        private void Btn4_Clicked(object sender, EventArgs e)
+        {
+            Uri fallout = new Uri("https://vgtimes.ru/tests/48-test-naskolko-horosho-ty-znaesh-igry-fallout.html");
+            Browser.OpenAsync(fallout);
+        }
+
+        private void Btn3_Clicked(object sender, EventArgs e)
+        {
+            Uri farcry = new Uri("https://vgtimes.ru/tests/51-test-naskolko-horosho-ty-znaesh-seriyu-far-cry.html");
+            Browser.OpenAsync(farcry);
+        }
+
+        private void Btn2_Clicked(object sender, EventArgs e)
+        {
+            Uri gta = new Uri("https://ustaliy.ru/test-kto-ty-iz-gta-5/");
+            Browser.OpenAsync(gta);
+        }
+
+        private void Btn1_Clicked(object sender, EventArgs e)
+        {
+            Uri minecraft = new Uri("https://ustaliy.ru/snax_quiz/test-kak-horosho-ty-znaesh-minecraft/");
+            Browser.OpenAsync(minecraft);
         }
     }
 }
